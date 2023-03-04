@@ -25,7 +25,7 @@ int cadastrar() //função responsável por cadastrar os usuários no sistema
 	fprintf(file,cpf); //salvo o valor da variável
 	fclose(file); //fecha o arquivo
 	
-	file = fopen(arquivo,"a"); //atualizazr informação
+	file = fopen(arquivo,"a"); //atualizar informação
 	fprintf(file,",");
 	fclose(file);
 	
@@ -72,11 +72,11 @@ int consultar()
 	char cpf[40];
 	char conteudo[200];
 	
-	printf("Digite o CPF a ser consultado: ");
+	printf("Digite o CPF a ser consultado: "); //recebendo qual usuário será consultado
 	scanf("%s",cpf);
 	
 	FILE *file;
-	file = fopen(cpf,"r"); //r de read
+	file = fopen(cpf,"r"); //r de read - ler
 	
 	if(file == NULL) //se for nulo - não existe
 	{
